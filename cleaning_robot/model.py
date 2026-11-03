@@ -43,8 +43,8 @@ def state_index(env, state: State) -> int:
 def build_transition_matrices(env) -> list[sp.csr_matrix]:
     """P[a][i, j] = Pr(next state j | state i, action a), one sparse matrix per action."""
     n = n_states(env)
-    rows = [array("l") for _ in ACTIONS]
-    cols = [array("l") for _ in ACTIONS]
+    rows = [array("q") for _ in ACTIONS]
+    cols = [array("q") for _ in ACTIONS]
     vals = [array("d") for _ in ACTIONS]
     for i, s in enumerate(all_states(env)):
         for a in ACTIONS:
