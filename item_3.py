@@ -13,9 +13,6 @@ from cleaning_robot.animate import animate
 
 
 def run_experiment_item3():
-    print("=" * 75)
-    print("EXPERIMENTO 3: Q-LEARNING (MODEL-FREE CONTROL)")
-    print("=" * 75)
 
     # Definição dos dois cenários escolhidos
     scenarios = [
